@@ -1,0 +1,39 @@
+:root {
+  --inactive-button-color: #01324e;
+  --active-button-color: #0a98eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button#start_stop_button {
+  background-color: var(--inactive-button-color);
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 6.5rem;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5rem solid #007c5d;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+button#start_stop_button[text='Start'] {
+  background-color: var(--active-button-color);
+}
