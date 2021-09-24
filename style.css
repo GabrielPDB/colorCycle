@@ -15,8 +15,22 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+
+.colors {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.color {
+  width: 2rem;
+  height: 2rem;
+  background: red;
+  border-radius: 50%;
 }
 
 button#start_stop_button {
